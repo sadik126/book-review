@@ -5,6 +5,7 @@ import {
   Savewishlist,
 } from "../../Utilities/Localstorage";
 import toast, { Toaster } from "react-hot-toast";
+import { Helmet } from "react-helmet-async";
 
 const Bookdetails = () => {
   const books = useLoaderData();
@@ -43,6 +44,9 @@ const Bookdetails = () => {
   return (
     <>
       <div className="card lg:card-side min-h-screen bg-base-100 shadow-xl">
+        <Helmet>
+          <title>Details</title>
+        </Helmet>
         <figure className="p-48">
           <img src={bookdetails.image} alt="Album" />
         </figure>

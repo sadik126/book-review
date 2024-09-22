@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getreadlist, getwishlist } from "../../Utilities/Localstorage";
 import Bookcard from "../Bookcard/Bookcard";
+import { Helmet } from "react-helmet-async";
 
 const Listedbooks = () => {
   const books = useLoaderData();
@@ -61,6 +62,9 @@ const Listedbooks = () => {
   };
   return (
     <div className="w-3/4 mx-auto">
+      <Helmet>
+        <title>All books</title>
+      </Helmet>
       <h1 className="text-center text-5xl mt-5">Books</h1>
       <div className="dropdown flex justify-center my-9">
         <div tabIndex={0} role="button" className="btn btn-success m-1">

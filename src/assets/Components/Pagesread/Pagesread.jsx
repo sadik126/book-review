@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 import {
   Bar,
@@ -21,6 +22,9 @@ const Pagesread = () => {
   }, []);
   return (
     <div className="flex items-center justify-center h-screen">
+      <Helmet>
+        <title>Pages to read</title>
+      </Helmet>
       <BarChart width={1430} height={550} data={books}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="bookName" />
