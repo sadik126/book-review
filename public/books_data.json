@@ -1,0 +1,80 @@
+[
+  {
+    "bookId": 1,
+    "bookName": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "image": "https://imgs.search.brave.com/w5u2QzjjuyXNltepCIjHJ1driLzonBCB0SKTukrykIs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly90YXJn/ZXQuc2NlbmU3LmNv/bS9pcy9pbWFnZS9U/YXJnZXQvR1VFU1Rf/NmRlODI3MmYtNmQ1/Mi00OTZhLTlhOGYt/MWUyOGY1OTY4Nzdj/P3dpZD04MDAmaGVp/PTgwMCZxbHQ9ODAm/Zm10PXBqcGVn.jpeg",
+    "review": "A gripping psychological thriller with shocking twists.",
+    "totalPages": 336,
+    "rating": 4.5,
+    "category": "Thriller",
+    "tags": ["Suspense", "Psychological"],
+    "publisher": "Celadon Books",
+    "yearOfPublishing": 2019
+  },
+  {
+    "bookId": 2,
+    "bookName": "Educated",
+    "author": "Tara Westover",
+    "image": "https://imgs.search.brave.com/8RUFhtbpstF1xnrrK9enK9nWDNZr2RNT5ACoBvd9duQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NDFHRTUtbDJwdEwu/anBn",
+    "review": "A powerful memoir about growing up in a survivalist family and pursuing education.",
+    "totalPages": 352,
+    "rating": 4.7,
+    "category": "Memoir",
+    "tags": ["Inspirational", "Non-Fiction"],
+    "publisher": "Random House",
+    "yearOfPublishing": 2018
+  },
+  {
+    "bookId": 3,
+    "bookName": "Becoming",
+    "author": "Michelle Obama",
+    "image": "https://imgs.search.brave.com/VCQbCe0x81JJJP9E5_aaUH8ZquHxubOqExSH0XwIhG0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzQxYzZVaXpPampM/LmpwZw",
+    "review": "An intimate, powerful, and inspiring memoir by the former First Lady of the United States.",
+    "totalPages": 448,
+    "rating": 4.9,
+    "category": "Autobiography",
+    "tags": ["Inspirational", "Political"],
+    "publisher": "Crown Publishing Group",
+    "yearOfPublishing": 2018
+  },
+  {
+    "bookId": 4,
+    "bookName": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "image": "https://imgs.search.brave.com/GDhMLe3cbvMQVHV2bAWlA_N1YF3z8rIa8OEZ2JvqvEo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc3F1YXJlc3Bh/Y2UtY2RuLmNvbS9j/b250ZW50L3YxLzYw/MzMyMjc5MzIxYzZm/NmNjODdjZjhmZS8w/MWQ5MTJlOS00YWI1/LTQyNGEtYjRhOC03/NTI1NmFmM2ZlMzQv/d2hlcmUrdGhlK2Ny/YXdkYWRzK3Npbmcu/anBn",
+    "review": "A heartbreaking coming-of-age story that intertwines a murder mystery.",
+    "totalPages": 368,
+    "rating": 4.8,
+    "category": "Fiction",
+    "tags": ["Mystery", "Romance"],
+    "publisher": "G.P. Putnam's Sons",
+    "yearOfPublishing": 2018
+  },
+  {
+    "bookId": 5,
+    "bookName": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "image": "https://imgs.search.brave.com/D9x-K1A2YP_Lu9iQuNHksqj7CaqPxcW8SSHnEDNERXw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTFNVDBNYnBEN0wu/anBn",
+    "review": "A counterintuitive guide to living a good life by focusing on what really matters.",
+    "totalPages": 224,
+    "rating": 4.3,
+    "category": "Self-Help",
+    "tags": ["Self-Improvement", "Motivational"],
+    "publisher": "HarperOne",
+    "yearOfPublishing": 2016
+  },
+  {
+    "bookId": 6,
+    "bookName": "The Alchemist",
+    "author": "Paulo Coelho",
+    "image": "https://imgs.search.brave.com/HYC3BfXua8Hg840CKQPzR2TOgYg-lzYD4ipbJPRb1Fs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzQxYUNtZVVaSkVM/LmpwZw",
+    "review": "A philosophical novel about following your dreams and the journey of self-discovery.",
+    "totalPages": 208,
+    "rating": 4.6,
+    "category": "Philosophical Fiction",
+    "tags": ["Adventure", "Spiritual"],
+    "publisher": "HarperOne",
+    "yearOfPublishing": 1988
+  }
+]
