@@ -6,13 +6,23 @@ import {
 } from "../../Utilities/Localstorage";
 import toast, { Toaster } from "react-hot-toast";
 import { Helmet } from "react-helmet-async";
+import { useEffect, useState } from "react";
 
 const Bookdetails = () => {
+  // const [books, setAllbooks] = useState([]);
   const books = useLoaderData();
   const { id } = useParams();
   const idInt = parseInt(id);
+
+  // useEffect(() => {
+  //   fetch("books_data.json")
+  //     .then((res) => res.json())
+  //     .then((data) => setAllbooks(data));
+  // }, [books]);
+
   const bookdetails = books.find((book) => book.bookId === idInt);
-  // console.log(bookdetails);
+
+  console.log(bookdetails, books, id);
 
   const handlewishlist = () => {
     const getallreadlist = getreadlist();

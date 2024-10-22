@@ -6,10 +6,31 @@ import { Helmet } from "react-helmet-async";
 
 const Listedbooks = () => {
   const books = useLoaderData();
+  const [loading, setLoading] = useState(false);
+  const [allbooks, setAllbooks] = useState([]);
   // const [displayBooks, displaysetBooks] = useState([]);
   // const [displaywishlist, displaysetWishlist] = useState([]);
   const [displayinformation, displaysetInformation] = useState([]);
   // const [filterjobs, setFilteredjobs] = useState([]);
+
+  // if (!books) {
+  //   return (
+  //     <ReactLoading
+  //       className="mx-auto"
+  //       type={"cylon"}
+  //       color={"black"}
+  //       height={667}
+  //       width={375}
+  //     />
+  //   );
+  // }
+
+  useEffect(() => {
+    fetch("/books_data.json")
+      .then((res) => res.json())
+      .then((data) => setAllbooks(data));
+  }, []);
+  console.log(allbooks);
 
   const handlefilterjobs = (filter) => {
     if (filter === "all") {
@@ -33,31 +54,34 @@ const Listedbooks = () => {
 
   useEffect(() => {
     const storedreadbooks = getreadlist();
+    // setLoading(true);
     if (books.length > 0) {
-      const allbooks = books.filter((book) =>
+      const alleverybooks = allbooks.filter((book) =>
         storedreadbooks.includes(book.bookId)
       );
-      displaysetInformation(allbooks);
+
+      displaysetInformation(alleverybooks);
+      // setLoading(false);
     }
-  }, [books]);
+  }, [allbooks]);
 
   const handlewishlist = () => {
     const storedwishlistbooks = getwishlist();
     if (books.length > 0) {
-      const allbooks = books.filter((book) =>
+      const alleverybooks = allbooks.filter((book) =>
         storedwishlistbooks.includes(book.bookId)
       );
-      displaysetInformation(allbooks);
+      displaysetInformation(alleverybooks);
     }
   };
 
   const handlereadlist = () => {
     const storedreadbooks = getreadlist();
     if (books.length > 0) {
-      const allbooks = books.filter((book) =>
+      const alleverybooks = allbooks.filter((book) =>
         storedreadbooks.includes(book.bookId)
       );
-      displaysetInformation(allbooks);
+      displaysetInformation(alleverybooks);
     }
   };
   return (

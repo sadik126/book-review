@@ -9,11 +9,13 @@ import Listedbooks from "./assets/Components/Listedbooks/Listedbooks.jsx";
 import Pagesread from "./assets/Components/Pagesread/Pagesread.jsx";
 import Bookdetails from "./assets/Components/Bookdetails/Bookdetails.jsx";
 import { HelmetProvider } from "react-helmet-async";
+import Errorelement from "./assets/Components/Errorelement/Errorelement.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <Errorelement></Errorelement>,
     children: [
       {
         path: "/",
@@ -22,7 +24,7 @@ const router = createBrowserRouter([
       {
         path: "/listedbooks",
         element: <Listedbooks></Listedbooks>,
-        loader: () => fetch("./books_data.json"),
+        loader: () => fetch("/books_data.json"),
       },
       {
         path: "/pagesread",
