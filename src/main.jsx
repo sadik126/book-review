@@ -10,6 +10,7 @@ import Pagesread from "./assets/Components/Pagesread/Pagesread.jsx";
 import Bookdetails from "./assets/Components/Bookdetails/Bookdetails.jsx";
 import { HelmetProvider } from "react-helmet-async";
 import Errorelement from "./assets/Components/Errorelement/Errorelement.jsx";
+import Usecontext from "./assets/Components/Usecontext/Usecontext.jsx";
 
 const router = createBrowserRouter([
   {
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
       {
         path: "/book/:id",
         element: <Bookdetails></Bookdetails>,
-        loader: () => fetch("./books_data.json"),
+        // loader: () => fetch("./books_data.json"),
       },
     ],
   },
@@ -42,8 +43,10 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <HelmetProvider>
-      <RouterProvider router={router}></RouterProvider>
-    </HelmetProvider>
+    <Usecontext>
+      <HelmetProvider>
+        <RouterProvider router={router}></RouterProvider>
+      </HelmetProvider>
+    </Usecontext>
   </StrictMode>
 );

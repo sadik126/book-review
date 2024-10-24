@@ -6,12 +6,30 @@ import {
 } from "../../Utilities/Localstorage";
 import toast, { Toaster } from "react-hot-toast";
 import { Helmet } from "react-helmet-async";
-import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { AuthContext } from "../Usecontext/Usecontext";
+import ReactLoading from "react-loading";
 
 const Bookdetails = () => {
   // const [books, setAllbooks] = useState([]);
-  const books = useLoaderData();
+
+  // const books = useLoaderData();
+  const { books, loading } = useContext(AuthContext);
+  console.log(books);
   const { id } = useParams();
+
+  if (loading) {
+    return (
+      <ReactLoading
+        className="mx-auto"
+        type={"cylon"}
+        color={"black"}
+        height={667}
+        width={375}
+      />
+    );
+  }
+
   const idInt = parseInt(id);
 
   // useEffect(() => {
